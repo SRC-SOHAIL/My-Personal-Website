@@ -771,7 +771,21 @@ body{
   margin-top: 50px;
   color: #6134eb;
 }
+@media (max-width: 600px){
+  .rounded{
+    margin-left: -20vw;
+  }
+}
+@media (max-width: 500px){
+  .rounded{
+    margin-left: -30vw;
+  }
+}
+@media (max-width: 352px){
+  .rounded{
+    height: 300px;
+    width: 250px;
+  }
+}
 
-
-
-
+html,body{ overflow-x: hidden; }
