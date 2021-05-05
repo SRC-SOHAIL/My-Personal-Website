@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <title>My Awesome Portfolio</title>
+    <title>My Awesome Website</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- link to Bootstrap minified css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,65 +21,50 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <!----------------------------------------------Navigation menu start----------------------------------------------------------------->
-    <header>
-        <nav class="nav navbar-fixed-top navbar-transparent">
-            <div class="container">
-                <div class="topnav navbar-header close-nav-menu outer-shadow hover-in-shadow">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html">SK SOHAIL</a>
-        
-                </div>
-                <div class="topnav collapse navbar-collapse" id="mynavBar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Home</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon glyphicon-envelope"></span> About</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon glyphicon-folder-open"></span> Profession</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon glyphicon-cog"></span> Skills</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon glyphicon-earphone"></span> Contact</a></li>
-                    </ul>
-                </div>
+    <nav class="nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">SK SOHAIL</a>
             </div>
-        </nav>
-    </header>
-    <!------------------------------------------------Navigation menu end------------------------------------------------------------------>
+            <div class="collapse navbar-collapse" id="mynavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#profession">PROFESSION</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main class="site.main">
 
-
-    <!----------------------------------------------------Start Main Area------------------------------------------------------------------>
-    <main class="site.main">
-
-    <!----------------------------------------------------Start Banner Area---------------------------------------------------------------->
-        <section class="site-banner">
+    <section class="site-banner">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 site-title">
-                        <h3 class="title-text">Hey</h3>
-                        <h1 class="title-text text-uppercase">I am Sohail</h1>
-                        <h4 class="title-text text-uppercase">Coder and Web Developer</h4>
-                        <div class="site-buttons">
-                            <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">Get CV</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 banner-image">
-                        <img src="image/sohail.jpg" alt="sohail.png" class="rounded inner-shadow imgfluid">
+                    <div class="col-lg-offset-6 site-title">
+                        <div style="margin-top: 50%;"></div>
+                        <h2 class="title-text text-uppercase">Hello, My name is<span></span></h2>
+                        <h2 class="title-text text-uppercase">SK Sohail<span></span></h2>
+                        <!--<h2 class="title-text text-uppercase">Coder & Web Developer<span></span></h2>-->
                     </div>
                 </div>
             </div>
-        </section>
-    <!------------------------------------------------------End Banner Area---------------------------------------------------------------->
-    <!------------------------------------------------------Start About Area--------------------------------------------------------------->
-        <section class="about-area">
+    </section>
+
+    <section id="about" class="about-area">
             <div class="container-fluid">
+                <div class="about-head">
+                    <h1>about me</h1>
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img  src="image/about-us.png" alt="About us" class="img-fluid">
+                            <img  src="image/sohail.jpg" alt="sohail" class="rounded img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6 about-title">
@@ -108,11 +94,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-    <!------------------------------------------------------End About Area----------------------------------------------------------------->
-
-    <!------------------------------------------------------Start Profession Area---------------------------------------------------------->
-        <section class="profession-area">
+    </section>
+    <section id= "profession" class="profession-area">
                 <div class="profession-title">
                     <h1 class="text-uppercase">
                         <span>profession</span>
@@ -162,18 +145,233 @@
                         </div>
                     </div>
                 </div>
-        </section>
-    <!------------------------------------------------------End Profession Area------------------------------------------------------------>
-    </main>
-    <!----------------------------------------------------End Main Area-------------------------------------------------------------------->
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script>
+    </section>
+    <section class="tabs-area" id="skills">
+           <div class="tabs">
+           <div class="tab-2">
+           <label for="tab2-1">Education</label>
+           <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+           <div class="container">
+            <div class="main-timeline">
+        
+                <!-- start experience section-->
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">2 Years</span>
+                                <span class="year">2014</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="title">10th Standard</h5>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+                            scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
+                            eu ultrices elit molestie.
+                        </p>
+                    </div>
+                </div>
+                <!-- end experience section-->
+        
+                <!-- start experience section-->
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">2 Years</span>
+                                <span class="year">2016</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="title">12th Standard</h5>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+                            scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
+                            eu ultrices elit molestie.
+                        </p>
+                    </div>
+                </div>
+                <!-- end experience section-->
+        
+                <!-- start experience section-->
+                <div class="timeline">
+                    <div class="icon"></div>
+                    <div class="date-content">
+                        <div class="date-outer">
+                            <span class="date">
+                                <span class="month">4 Years</span>
+                                <span class="year">2018</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <h5 class="title">College</h5>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+                            scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
+                            eu ultrices elit molestie.
+                        </p>
+                    </div>
+                </div>
+                <!-- end experience section-->
+        
+                 </div>
+            </div>
+        </div>
+        <div class="tab-2">
+        <label for="tab2-2">Skills</label>
+        <input id="tab2-2" name="tabs-two" type="radio">
+        <div role="tabpanel" class=" tab-pane" id="skill">
+            <div class="skill-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 90%">
+                                <span class="skill-name"><strong>Python</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">90%</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 80%">
+                                <span class="skill-name"><strong>HTML</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">80%</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 70%">
+                                <span class="skill-name"><strong>CSS</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">70%</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 50%">
+                                <span class="skill-name"><strong>PHP</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">50%</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 50%">
+                                <span class="skill-name"><strong>SQL</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">50%</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div class="progress">
+                            <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 60%">
+                                <span class="skill-name"><strong>JAVA</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-left">60%</div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-area" id="contact">
+        <div class="container">
+            <h1 class="contact-title">contact info</h1>
+        </div>
+        <div class="contact-body container">
+            <div class="row">
+                <div class="contact-item col-lg-4 col-xs-12">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="phone">
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <span>7044731856</span>
+                    </div>
+                </div>
+                <div class="contact-item col-lg-4 col-xs-12">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="phone">
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <span>sohailonline2016@gmail.com</span>
+                        <span>ece1823@cemk.ac.in</span>
+                    </div>
+                </div>
+                <div class="contact-item col-lg-4 col-xs-12">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="phone">
+                    </div>
+                    <div class="contact-info">
+                        <h4>Address</h4>
+                        <span>Howrah, West Bengal</span>
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="footer">
+    <div class="social-links container">
+        <div class="social-name">
+            <h1><span>S</span>K <span>S</span>OHAIL</h1>
+            <h3>Socail links</h3>
+        </div>
+        <div class="social-link">
+            <a href="https://www.facebook.com/sk.sohail.37669/" target="_blank">
+                <img src="https://img.icons8.com/nolan/90/facebook-new.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/sk-sohail-b37173186/" target="_blank">
+                <img src="https://img.icons8.com/nolan/90/linkedin.png" alt="">
+            </a>
+            <a href="https://github.com/src-sohail" target="_blank">
+                <img src="https://img.icons8.com/nolan/90/github.png" alt="">
+            </a>
+        </div>
+    </div>
+	<div class="container">
+        <center>
+		Copyright <span class="glyphicon glyphicon-copyright-mark"></span> SK SOHAIL.
+		All Rights Reserved
+        </center>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script>
         VanillaTilt.init(document.querySelectorAll(".card"),{
                 max: 25,
                 speed: 400,
                 glare: true,
                 "max-glare": 1
             });
-    </script>
+ </script>
 </body>
 </html>
